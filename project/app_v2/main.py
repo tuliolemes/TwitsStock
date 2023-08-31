@@ -1,7 +1,7 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from project.app_v2.routers import users, assets, user_assets, services
 from project.app_v2.database.database import create_pg_pool
-from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
